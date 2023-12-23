@@ -129,8 +129,9 @@ void MainWindow::EvWmCreate(HWND hWnd)
    resourceMgr.AddButton(hWnd, TEXT("Update"), ID_BUTTON_CMD_UPDATE, iValueX, iY, iResourceWidth, iResourceHeight);
    iY += iResourceHeight + iSpacerY;
    resourceMgr.AddButton(hWnd, TEXT("Delete"), ID_BUTTON_CMD_DELETE, iValueX, iY, iResourceWidth, iResourceHeight);
-   iY += iResourceHeight + iSpacerY;
-   resourceMgr.AddButton(hWnd, TEXT("Exit"), ID_BUTTON_CMD_EXIT, iValueX, iY, iResourceWidth, iResourceHeight);
+   // Remove exit button for now
+   //iY += iResourceHeight + iSpacerY;
+   //resourceMgr.AddButton(hWnd, TEXT("Exit"), ID_BUTTON_CMD_EXIT, iValueX, iY, iResourceWidth, iResourceHeight);
 
    // Listview its column names
    hwndList = resourceMgr.AddList(hWnd, TEXT("LV"), ID_LISTVIEW, iValueX + iResourceWidth + iSpacerX, 20, 710, 420);
